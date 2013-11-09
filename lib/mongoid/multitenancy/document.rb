@@ -18,7 +18,7 @@ module Mongoid
           self.tenant_field = tenant_field
 
           # Validates the tenant field
-          validates tenant_field, tenant: tenant_options
+          validates :tenant_field, tenant: tenant_options
 
           # Set the current_tenant on newly created objects
           before_validation lambda { |m|
