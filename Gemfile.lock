@@ -2,7 +2,6 @@ PATH
   remote: .
   specs:
     mongoid-multitenancy (0.3.4)
-      mongoid (~> 2.0.0.rc.7)
 
 GEM
   remote: https://rubygems.org/

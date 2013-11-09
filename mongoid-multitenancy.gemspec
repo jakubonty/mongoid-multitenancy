@@ -15,8 +15,6 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Mongoid::Multitenancy::VERSION
 
-  gem.add_dependency('mongoid', '~> 2.0.0.rc.7')
-
   gem.add_development_dependency('rake', '~> 10.0')
   gem.add_development_dependency('rspec', '~> 2.12')
   gem.add_development_dependency('yard', '~> 0.8')
