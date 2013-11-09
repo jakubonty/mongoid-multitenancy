@@ -15,12 +15,12 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Mongoid::Multitenancy::VERSION
 
-  gem.add_dependency('mongoid', '~> 3')
+  gem.add_dependency('mongoid', '~> 2')
 
   gem.add_development_dependency('rake', '~> 10.0')
   gem.add_development_dependency('rspec', '~> 2.12')
   gem.add_development_dependency('yard', '~> 0.8')
-  gem.add_development_dependency('mongoid-rspec', '~> 1.5')
+  gem.add_development_dependency('mongoid-rspec')
   gem.add_development_dependency('database_cleaner', '~> 1.0')
   gem.add_development_dependency('redcarpet', '~> 2.2')
 end
