@@ -33,9 +33,9 @@ module Mongoid
             criteria = if Multitenancy.current_tenant
               if tenant_options[:optional]
                 #any_of({ self.tenant_field => Multitenancy.current_tenant.id }, { self.tenant_field => nil })
-                where({ tenant_field.to_sym.in => [Multitenancy.current_tenant.id, nil] })
+                where({ :tenant_field.in => [Multitenancy.current_tenant.id, nil] })
               else
-                where({ tenant_field => Multitenancy.current_tenant.id })
+                where({ :tenant_field => Multitenancy.current_tenant.id })
               end
             else
               where(nil)
